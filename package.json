@@ -1,0 +1,29 @@
+{
+  "name": "github-jobs",
+  "version": "0.0.0",
+  "description": "Github Jobs API module",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/peterdemartini/github-jobs.git"
+  },
+  "keywords": [
+    "Github",
+    "Jobs",
+    "API",
+    "REST"
+  ],
+  "author": "Peter DeMartini",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/peterdemartini/github-jobs/issues"
+  },
+  "homepage": "https://github.com/peterdemartini/github-jobs",
+  "dependencies": {
+    "restler": "~3.2.2",
+    "lodash": "~2.4.1"
+  }
+}
