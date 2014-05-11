@@ -28,20 +28,20 @@ jobs.find([params], [callback]);
 
 #### Parameters:
 
-**page :** Used for pagination (optional) [default = 1]
+**page :** Used for pagination (optional) [default = 0]
 
 **timeout :** Timeout in milliseconds (optional) [default = 10000]
 
-**term : ** A search term, such as "ruby" or "java". This parameter is aliased to search. (optional)
+**term :** A search term, such as "ruby" or "java". This parameter is aliased to search. (optional)
 
-**location : **  A city name, zip code, or other location search term.
+**location :**  A city name, zip code, or other location search term.
  A city name, zip code, or other location search term. (optional)
 
-**lat : **  A specific latitude. If used, you must also send long and must not send location. (optional)
+**lat :**  A specific latitude. If used, you must also send long and must not send location. (optional)
 
-**long : ** A specific longitude. If used, you must also send lat and must not send location. (optional)
+**long :** A specific longitude. If used, you must also send lat and must not send location. (optional)
 
-**full_time : ** If you want to limit results to full time positions set this parameter to 'true'. (optional)
+**full_time :** If you want to limit results to full time positions set this parameter to 'true'. (optional)
 
 #### Callback:
 

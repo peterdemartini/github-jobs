@@ -1,7 +1,7 @@
 var jobs = require('./index.js');
 
 jobs.find({
-    term : 'Node.js'
+    term : 'Software Developer'
 }, function(err, results){
     if(err){
         return console.log('Error: ', err);
@@ -14,7 +14,7 @@ jobs.find({
             if(err){
                 return console.log('Error: ', err);
             }
-            console.log('Job : ', result);
+            console.log('Job : ', result.title);
         });
     });
 });
