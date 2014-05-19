@@ -47,7 +47,7 @@ jobs.find([params], [callback]);
 
 ````
 function(err, jobs){
-
+    ...
 }
 ````
 
