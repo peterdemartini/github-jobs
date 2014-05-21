@@ -1,7 +1,10 @@
+'use strict';
+
 var jobs = require('./index.js');
 
 jobs.find({
-    term : 'Software Developer'
+    term : 'Node.js',
+    location : 'San Francisco'
 }, function(err, results){
     if(err){
         return console.log('Error: ', err);
