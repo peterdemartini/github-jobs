@@ -82,3 +82,11 @@ jobs.findById(id, [callback]);
             });
         });
     });
+
+## How to contribute
+Please check all tests after submit a merge request.
+
+To run unit tests execute in the project folder execute
+```bash
+  node_modules/mocha/bin/mocha test/
+```
