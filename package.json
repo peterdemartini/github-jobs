@@ -1,6 +1,6 @@
 {
   "name": "github-jobs",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "description": "Github Jobs API module",
   "main": "index.js",
   "scripts": {
@@ -23,8 +23,10 @@
   },
   "homepage": "https://github.com/peterdemartini/github-jobs",
   "dependencies": {
+    "lodash": "~2.4.1",
+    "q": "^1.4.1",
     "restler": "~3.2.2",
-    "lodash": "~2.4.1"
+    "urijs": "^1.17.0"
   },
   "devDependencies": {
     "mocha": "^2.3.4"

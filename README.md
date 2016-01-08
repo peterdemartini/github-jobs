@@ -23,7 +23,7 @@ var jobs = require('github-jobs');
 Search for positions
 
 ````
-jobs.find([params], [callback]);
+jobs.find([params], [callback]);//Return a promise
 ````
 
 #### Parameters:
@@ -55,13 +55,36 @@ function(err, jobs){
 
 Find a position by the position id.
 
-````
-jobs.findById(id, [callback]);
-````
+```javascript
+jobs.findById(id, [callback]);//Return a promise
+```
 
 
 ### Full Example
 
+* With Promise
+
+```javascript
+    var jobs = require('github-jobs');
+    jobs.find({
+        term : 'Node.js'
+    }).then(function(results){
+        console.log('Found ' + results.length + ' jobs.');
+        results.forEach(function(job){
+            jobs.findById(job.id).then(function(result){
+                console.log('Job : ', result);
+            }).catch(function(err){
+              console.log('Error: ', err);
+            });
+        });
+    }).catch(function(err){
+      console.log('Error: ', err);
+    });
+```
+
+* With callback
+
+```javascript
     var jobs = require('github-jobs');
 
     jobs.find({
@@ -82,7 +105,7 @@ jobs.findById(id, [callback]);
             });
         });
     });
-
+```
 ## How to contribute
 Please check all tests after submit a merge request.
 
